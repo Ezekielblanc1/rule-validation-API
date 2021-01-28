@@ -1,5 +1,5 @@
 {
-  "name": "Flutter wave technical challenge",
+  "name": "validationAPI",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Eazi",
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
