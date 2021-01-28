@@ -1,0 +1,11 @@
+{
+    "message": "My Rule-Validation API",
+    "status": "success",
+    "data": {
+      "name": "Ezekiel Nnochirionye",
+      "github": "@Ezekielblanc1",
+      "email": "ezekielblanc1@gmail.com",
+      "mobile": "08165150581",
+      "twitter": "@ezekiel_obinwa"
+    }
+  }
