@@ -12,5 +12,5 @@ app.get("/", (req, res) => {
 });
 
 app.post("/validate-rule", joiValidator(joiSchema), validateFieldFromData, setRule);
-const port = process.env.PORT || 3001
-app.listen(3001, () => console.log(`Server running on port ${port}`));
+
+app.listen(process.env.PORT || 5000, () => console.log(`Server running on port ${port}`));
