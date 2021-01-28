@@ -30,5 +30,5 @@ npm install
 This will get the application up and running.
 
 ```
-npm run dev
+npm start
 ```
