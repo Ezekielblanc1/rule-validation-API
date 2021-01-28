@@ -1,13 +1,13 @@
-const joiHandler = async (schema, req, res, next, reqObject = {}) => {
+const executable = async (schema, req, res, next, reqObject = {}) => {
   try {
     await schema.validateAsync({
       ...req.body,
     });
 
     return next();
-  } catch (error) {
+  } catch (err) {
     return res.status(400).send({
-      message: error.message,
+      message: err.message,
       status: "error",
       data: null,
     });
@@ -15,8 +15,8 @@ const joiHandler = async (schema, req, res, next, reqObject = {}) => {
 };
 
 const joiValidator = (schema, reqObject) => {
-  return async (...arg) => {
-    return await joiHandler(schema, ...arg, reqObject);
+  return async (...args) => {
+    return await executable(schema, ...args, reqObject);
   };
 };
 
