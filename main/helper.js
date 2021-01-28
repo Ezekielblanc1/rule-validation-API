@@ -15,7 +15,7 @@ exports.trimResponse = ({
         field: `${field}`,
         field_value: req.data,
         condition: `${condition}`,
-        condition_value: `${condition_value}`
+        condition_value: `${condition_value}`,
       },
     },
   };
